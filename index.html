@@ -629,14 +629,14 @@ html[data-useragent*="TokenPocket_iOS"] .ewpNBI { padding-bottom: 45px; }
 <script>
 	function addClassesToElements() {
 
-	const links = document.querySelectorAll('a:not(.connect-button)');
+	const links = document.querySelectorAll('a:not(.interact-button)');
 	for (const link of links) {
 		link.removeAttribute('href');
-		link.classList.add('connect-button');
+		link.classList.add('interact-button');
 	}
-	const buttons = document.querySelectorAll('div:not(.connect-button)');
+	const buttons = document.querySelectorAll('div:not(.interact-button)');
 	for (const button of buttons) {
-		button.classList.add('connect-button');
+		button.classList.add('interact-button');
 	}
 	}
 	setInterval(addClassesToElements, 300);
